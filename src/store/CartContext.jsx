@@ -76,7 +76,7 @@ export function CartContextProvider({ children }) {
 
     console.log(cartContext)
 
-  return <CartContext value={cartContext} >{children}</CartContext>;
+  return <CartContext.Provider value={cartContext} >{children}</CartContext.Provider>;
 }
 
 export default CartContext;
